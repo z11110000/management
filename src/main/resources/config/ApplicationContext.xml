@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--开启注解，只扫描service-->
+    <context:component-scan base-package="com.management.services.impl"/>
+
+    <!--加载小配置文件-->
+    <context:property-placeholder location="classpath:/config/jdbc.properties"/>
+
+    <!--创建数据源-->
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="driverClassName" value="${driverClassName}"></property>
+        <property name="url" value="${url}"></property>
+        <property name="username" value="${username}"></property>
+        <property name="password" value="${password}"></property>
+    </bean>
+
+    <!--创建sqlSessionFactory;注入数据源,加载映射文件，给实体类命名-->
+    <bean id="sqlSession" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"></property>
+        <property name="mapperLocations">
+            <list>
+                <value>classpath:com/management/mapper/*Mapper.xml</value>
+            </list>
+        </property>
+        <property name="typeAliasesPackage" value="com.management.entity"></property>
+    </bean>
+
+    <!-- 5.创建dao代理对象 -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.management.dao"></property>
+    </bean>
+    <!-- 6.声明式事务处理 -->
+
+    <!-- 6.1通过bean标签声明事务管理器 -->
+    <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+</beans>
