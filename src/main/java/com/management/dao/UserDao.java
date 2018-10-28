@@ -6,6 +6,7 @@ import java.util.List;
 
 public interface UserDao {
 
-    public List<User> getList();
+    List<User> getList();
 
+    User getEntity(User user);
 }

@@ -11,5 +11,7 @@ public interface UserService {
      * @param user
      * @return
      */
-    public List<User> getList(User user);
+    public List<User> getList(User user) throws Exception;
+
+    public User getEntity(User user) throws Exception;
 }
