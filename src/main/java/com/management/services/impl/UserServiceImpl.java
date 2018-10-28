@@ -3,7 +3,6 @@ package com.management.services.impl;
 import com.management.dao.UserDao;
 import com.management.entity.User;
 import com.management.services.UserService;
-import org.springframework.dao.support.DaoSupport;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

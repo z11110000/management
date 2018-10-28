@@ -1,7 +1,6 @@
 package com.management.controller;
 
 import com.management.base.BaseResult;
-import com.management.base.BaseResultMap;
 import com.management.entity.User;
 import com.management.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +27,7 @@ public class UserController {
     @RequestMapping("/getList")
     @ResponseBody
     public Map<String,Object> getList(User user){
-        Map<String, Object> map = BaseResultMap.resultOk();
+        Map<String, Object> map = BaseResult.resultOk();
         List<User> userList = null;
         try {
             userList = userService.getList(user);
