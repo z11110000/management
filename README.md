@@ -1,2 +1,1 @@
-# management
-logistics management system
+# property management system
