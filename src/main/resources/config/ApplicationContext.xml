@@ -10,8 +10,13 @@
     <!--开启注解，只扫描service-->
     <context:component-scan base-package="com.management.services.impl"/>
 
-    <!--加载小配置文件-->
-    <context:property-placeholder location="classpath:/config/jdbc.properties"/>
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath*:/config/jdbc.properties</value>
+            </list>
+        </property>
+    </bean>
 
     <!--创建数据源-->
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
