@@ -1,4 +1,4 @@
-package com.management.entity;
+package com.management.entity.utils;
 
 import java.io.BufferedReader;
 import java.io.Reader;

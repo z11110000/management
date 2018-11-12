@@ -7,8 +7,14 @@
                            http://www.springframework.org/schema/context
                            http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!--开启注解，只扫描service-->
-    <context:component-scan base-package="com.management.services.impl"/>
+    <!--启用注解-->
+    <context:annotation-config/>
+
+    <!--扫描注解-->
+    <context:component-scan base-package="com.management">
+    <context:exclude-filter type="annotation"
+                            expression="org.springframework.stereotype.Controller" />
+    </context:component-scan>
 
     <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
         <property name="locations">
@@ -26,22 +32,23 @@
         <property name="password" value="${password}"></property>
     </bean>
 
-    <!--创建sqlSessionFactory;注入数据源,加载映射文件，给实体类命名-->
-    <bean id="sqlSession" class="org.mybatis.spring.SqlSessionFactoryBean">
-        <property name="dataSource" ref="dataSource"></property>
-        <property name="mapperLocations">
-            <list>
-                <value>classpath:com/management/mapper/*Mapper.xml</value>
-            </list>
-        </property>
-        <property name="typeAliasesPackage" value="com.management.entity"></property>
-    </bean>
-
     <!-- 5.创建dao代理对象 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.management.dao"></property>
     </bean>
     <!-- 6.声明式事务处理 -->
+
+    <!--创建sqlSessionFactory;注入数据源,加载映射文件，给实体类命名-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <property name="configLocation" value="classpath:config/mybatis-config.xml"></property>
+        <!-- mapper扫描 -->
+        <property name="mapperLocations" value="classpath*:com/management/mapper/**/*Mapper.xml"></property>
+        <property name="typeAliasesPackage" value="com.management.entity"></property>
+    </bean>
+    <bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate" >
+        <constructor-arg ref="sqlSessionFactory" />
+    </bean>
 
     <!-- 6.1通过bean标签声明事务管理器 -->
     <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">

@@ -17,7 +17,8 @@
         .wrap1{position:absolute; top:0; right:0; bottom:0; left:0; margin:auto }/*把整个屏幕真正撑开--而且能自己实现居中*/
         .main_content{background:url(images/main_bg.png) repeat; margin-left:auto; margin-right:auto; text-align:left; float:none; border-radius:8px;}
         .form-group{position:relative;}
-        .login_btn{display:block; background:#3872f6; color:#fff; font-size:15px; width:100%; line-height:50px; border-radius:3px; border:none; }
+        .login_btn{display:block; background:#3872f6; color:#fff; font-size:15px; width:40%; line-height:40px; border-radius:3px; border:none; }
+        .register_btn{display:block; background:#3872f6; color:#fff; font-size:15px; width:40%; line-height:40px; border-radius:3px; border:none; }
         .login_input{width:100%; border:1px solid #3872f6; border-radius:3px; line-height:40px; padding:2px 5px 2px 30px; background:none;}
         .icon_font{position:absolute; bottom:15px; left:10px; font-size:18px; color:#3872f6;}
         .font16{font-size:16px;}
@@ -43,7 +44,7 @@
                 <form method="post" action="/user/login.do" >
                     <div class="form-group mg-t20">
                         <i class="icon-user icon_font"></i>
-                        <input type="email" class="login_input" id="Email1" name="loginName" placeholder="请输入用户名" />
+                        <input type="text" class="login_input" id="Email1" name="loginName" placeholder="请输入用户名" />
                     </div>
                     <div class="form-group mg-t20">
                         <i class="icon-lock icon_font"></i>
@@ -55,7 +56,8 @@
                         </label>
                     </div>
                     <button style="submit" class="login_btn" onclick="login">登 录</button>
-               </form>
+                    <button style="submit" class="register_btn" onclick="login">注 册</button>
+                </form>
         </div><!--row end-->
     </div><!--container end-->
 <div style="text-align:center;">

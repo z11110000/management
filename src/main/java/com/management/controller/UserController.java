@@ -54,6 +54,7 @@ public class UserController {
                 return BaseResult.resultError();
             }
         } catch (Exception e) {
+            e.printStackTrace();
             return BaseResult.resultError("登录异常");
         }
     }

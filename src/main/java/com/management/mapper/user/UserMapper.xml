@@ -3,8 +3,8 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.management.dao.UserDao">
-    <resultMap type="User" id="userMap">
+<mapper namespace="UserMapper">
+    <resultMap type="com.management.entity.User" id="userMap">
         <id property="id" column="ID"/>
         <result property="loginName" column="LOGIN_NAME"/>
         <result property="password" column="PASSWORD"/>
@@ -14,7 +14,7 @@
     </resultMap>
 
     <!--获取所有用户-->
-    <select id="getList" resultMap="userMap">
+    <select id="getList" resultMap="userMap" parameterType="user">
         SELECT * FROM user
         WHERE 1 = 1
         <if test="id != null and id != ''">
@@ -26,8 +26,10 @@
     </select>
 
     <!--根据用户名和密码获取用户实体-->
-    <select id="getEntity" resultMap="userMap">
-        SELECT * FROM user WHERE LOGIN_NAME = #{loginName} AND id = #{password}
+    <select id="getEntity" resultMap="userMap" parameterType="user">
+        SELECT * FROM user
+        WHERE LOGIN_NAME = #{loginName}
+              AND PASSWORD = #{password}
     </select>
     
 
