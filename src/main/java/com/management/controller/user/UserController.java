@@ -1,4 +1,4 @@
-package com.management.controller;
+package com.management.controller.user;
 
 import com.management.base.BaseResult;
 import com.management.controller.base.BaseController;
@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
 import java.util.Map;
@@ -48,18 +49,20 @@ public class UserController extends BaseController {
      */
     @RequestMapping("login")
     @ResponseBody
-    public Map<String,Object> login(){
+    public ModelAndView login(){
+        ModelAndView model = new ModelAndView();
         PageData pd = this.getPageData();
         try {
             User entity = userService.getEntity(pd);
             if(entity != null){
-                return BaseResult.resultOk();
+                model.setViewName("login.jsp");
             }else {
-                return BaseResult.resultError();
+                model.setViewName("login.jsp");
             }
         } catch (Exception e) {
             e.printStackTrace();
-            return BaseResult.resultError("登录异常");
+            model.setViewName("login.jsp");
         }
+        return model;
     }
 }
