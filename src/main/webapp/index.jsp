@@ -10,12 +10,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>登录界面</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link href="iconfont/style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
+    <link href="/assets/iconfont/style.css" type="text/css" rel="stylesheet">
     <style>
         body{color:#fff; font-family:"微软雅黑"; font-size:14px;}
         .wrap1{position:absolute; top:0; right:0; bottom:0; left:0; margin:auto }/*把整个屏幕真正撑开--而且能自己实现居中*/
-        .main_content{background:url(images/main_bg.png) repeat; margin-left:auto; margin-right:auto; text-align:left; float:none; border-radius:8px;}
+        .main_content{background:url(/assets/images/main_bg.png) repeat; margin-left:auto; margin-right:auto; text-align:left; float:none; border-radius:8px;}
         .form-group{position:relative;}
         .login_btn{display:block; background:#3872f6; color:#fff; font-size:15px; width:40%; line-height:40px; border-radius:3px; border:none; }
         .register_btn{display:block; background:#3872f6; color:#fff; font-size:15px; width:40%; line-height:40px; border-radius:3px; border:none; }
@@ -35,13 +35,13 @@
 
 </head>
 
-<body style="background:url(images/bg.jpg) no-repeat;">
+<%--<body style="background:url(/assets/images/bg.jpg) no-repeat;">
     
     <div class="container wrap1" style="height:450px;">
             <h2 class="mg-b20 text-center">物流系统登录页面</h2>
             <div class="col-sm-8 col-md-5 center-auto pd-sm-50 pd-xs-20 main_content">
                 <p class="text-center font16">用户登录</p>
-                <form method="post" action="/user/login.do" >
+                <form method="post" action="/login/login.do" >
                     <div class="form-group mg-t20">
                         <i class="icon-user icon_font"></i>
                         <input type="text" class="login_input" id="Email1" name="loginName" placeholder="请输入用户名" />
@@ -62,10 +62,18 @@
     </div><!--container end-->
 <div style="text-align:center;">
 </div>
-</body>
+</body>--%>
 </html>
 
-<script type="text/javascript" src="/js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery-2.0.3.min.js"></script>
 <script type="text/javascript">
-    
+    $(function() {
+
+        var basePath = '<%=basePath %>';
+        window.onload = gotoIndex();
+
+        function gotoIndex(){
+            window.location= basePath + 'login/toLogin.do';
+        }
+    });
 </script>

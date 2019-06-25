@@ -133,30 +133,6 @@
           <version>1.0.1</version>
       </dependency>
 
-      <!-- Mybatis start-->
-      <dependency>
-          <groupId>org.mybatis</groupId>
-          <artifactId>mybatis</artifactId>
-          <version>3.2.5</version>
-      </dependency>
-
-      <dependency>
-          <groupId>org.mybatis</groupId>
-          <artifactId>mybatis-spring</artifactId>
-          <version>1.2.0</version>
-      </dependency>
-      <dependency>
-          <groupId>mysql</groupId>
-          <artifactId>mysql-connector-java</artifactId>
-          <version>5.0.5</version>
-      </dependency>
-      <dependency>
-          <groupId>com.hynnet</groupId>
-          <artifactId>sqljdbc4-chs</artifactId>
-          <version>4.0.2206.100</version>
-      </dependency>
-      <!-- Mybatis end-->
-
       <dependency>
           <groupId>com.fasterxml.jackson.core</groupId>
           <artifactId>jackson-core</artifactId>

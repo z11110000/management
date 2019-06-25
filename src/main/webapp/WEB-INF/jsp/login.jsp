@@ -43,7 +43,7 @@ Purchase: http://wrapbootstrap.com
     <div class="login-container animated fadeInDown">
         <div class="loginbox bg-white">
             <div class="loginbox-title">SIGN IN</div>
-            <div class="loginbox-social">
+            <%--<div class="loginbox-social">
                 <div class="social-title ">Connect with Your Social Accounts</div>
                 <div class="social-buttons">
                     <a href="" class="button-facebook">
@@ -60,7 +60,7 @@ Purchase: http://wrapbootstrap.com
             <div class="loginbox-or">
                 <div class="or-line"></div>
                 <div class="or">OR</div>
-            </div>
+            </div>--%>
             <div class="loginbox-textbox">
                 <input type="text" class="form-control" placeholder="Email" />
             </div>
@@ -86,7 +86,7 @@ Purchase: http://wrapbootstrap.com
     <script src="/assets/js/bootstrap.min.js"></script>
 
     <!--Beyond Scripts-->
-    <script src="/assets/js/beyond.js"></script>
+    <%--<script src="/assets/js/beyond.js"></script>--%>
 
     <!--Google Analytics::Demo Only-->
     <script>

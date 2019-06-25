@@ -1,6 +1,5 @@
 package com.management.controller.user;
 
-import com.management.base.BaseResult;
 import com.management.controller.base.BaseController;
 import com.management.entity.User;
 import com.management.entity.utils.PageData;
@@ -11,35 +10,40 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.util.List;
-import java.util.Map;
-
-
 @Controller
-@RequestMapping("/user")
-public class UserController extends BaseController {
+@RequestMapping("/login")
+public class LoginController extends BaseController {
 
     @Autowired
     private UserService userService;
 
-
     /**
-     * 获取所有用户
+     * 登录
      * @return
      */
-    @RequestMapping("/getList")
+    @RequestMapping("login")
     @ResponseBody
-    public Map<String,Object> getList(){
-        Map<String, Object> map = BaseResult.resultOk();
+    public ModelAndView login(){
+        ModelAndView model = new ModelAndView();
         PageData pd = this.getPageData();
-        List<User> userList = null;
         try {
-            userList = userService.getList(pd);
+            User entity = userService.getEntity(pd);
+            if(entity != null){
+                model.setViewName("login.jsp");
+            }else {
+                model.setViewName("login.jsp");
+            }
         } catch (Exception e) {
             e.printStackTrace();
-            return BaseResult.resultError("查询异常");
+            model.setViewName("login.jsp");
         }
-        map.put("userList",userList);
-        return map;
+        return model;
+    }
+
+    @RequestMapping("toLogin")
+    public ModelAndView toLogin(){
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("login.jsp");
+        return mv;
     }
 }

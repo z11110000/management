@@ -26,6 +26,8 @@
 
     <mvc:default-servlet-handler/>
 
+    <!-- 静态文件访问-->
+    <mvc:resources mapping="/assets/**" location="/assets/"/>
     <!--配置视图解析器-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/jsp/"></property>
