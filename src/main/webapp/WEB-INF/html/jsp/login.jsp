@@ -35,50 +35,52 @@ Purchase: http://wrapbootstrap.com
     <link id="skin-link" href="" rel="stylesheet" type="text/css" />
 
     <!--Skin Script: Place this script in head to load scripts for skins and rtl support-->
-    <script src="/assets/js/skins.min.js"></script>
+    <%--<script src="/assets/js/skins.min.js"></script>--%>
 </head>
 <!--Head Ends-->
 <!--Body-->
 <body>
     <div class="login-container animated fadeInDown">
-        <div class="loginbox bg-white">
-            <div class="loginbox-title">SIGN IN</div>
-            <%--<div class="loginbox-social">
-                <div class="social-title ">Connect with Your Social Accounts</div>
-                <div class="social-buttons">
-                    <a href="" class="button-facebook">
-                        <i class="social-icon fa fa-facebook"></i>
-                    </a>
-                    <a href="" class="button-twitter">
-                        <i class="social-icon fa fa-twitter"></i>
-                    </a>
-                    <a href="" class="button-google">
-                        <i class="social-icon fa fa-google-plus"></i>
-                    </a>
+        <form method="post" action="/login/login.do" >
+            <div class="loginbox bg-white">
+                <div class="loginbox-title">SIGN IN</div>
+                <%--<div class="loginbox-social">
+                    <div class="social-title ">Connect with Your Social Accounts</div>
+                    <div class="social-buttons">
+                        <a href="" class="button-facebook">
+                            <i class="social-icon fa fa-facebook"></i>
+                        </a>
+                        <a href="" class="button-twitter">
+                            <i class="social-icon fa fa-twitter"></i>
+                        </a>
+                        <a href="" class="button-google">
+                            <i class="social-icon fa fa-google-plus"></i>
+                        </a>
+                    </div>
                 </div>
+                <div class="loginbox-or">
+                    <div class="or-line"></div>
+                    <div class="or">OR</div>
+                </div>--%>
+                <div class="loginbox-textbox">
+                    <input type="text" class="form-control" placeholder="LoginName" name="loginName"/>
+                </div>
+                <div class="loginbox-textbox">
+                    <input type="password" class="form-control" placeholder="Password" name="password"/>
+                </div>
+                <div class="loginbox-forgot">
+                    <a href="">Forgot Password?</a>
+                </div>
+                <div class="loginbox-submit">
+                    <input type="submit" class="btn btn-primary btn-block" value="Login">
+                </div>
+                <%--<div class="loginbox-signup">
+                    <a href="register.html">Sign Up With Email</a>
+                </div>--%>
             </div>
-            <div class="loginbox-or">
-                <div class="or-line"></div>
-                <div class="or">OR</div>
-            </div>--%>
-            <div class="loginbox-textbox">
-                <input type="text" class="form-control" placeholder="Email" />
+            <div class="logobox">
             </div>
-            <div class="loginbox-textbox">
-                <input type="text" class="form-control" placeholder="Password" />
-            </div>
-            <div class="loginbox-forgot">
-                <a href="">Forgot Password?</a>
-            </div>
-            <div class="loginbox-submit">
-                <input type="button" class="btn btn-primary btn-block" value="Login">
-            </div>
-            <div class="loginbox-signup">
-                <a href="register.html">Sign Up With Email</a>
-            </div>
-        </div>
-        <div class="logobox">
-        </div>
+        </form>
     </div>
 
     <!--Basic Scripts-->

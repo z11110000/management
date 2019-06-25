@@ -18,27 +18,27 @@ Purchase: http://wrapbootstrap.com
     <meta name="description" content="Dashboard" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
 
 
     <!--Basic Styles-->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
     <link id="bootstrap-rtl-link" href="" rel="stylesheet" />
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="assets/css/weather-icons.min.css" rel="stylesheet" />
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/assets/css/weather-icons.min.css" rel="stylesheet" />
 
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300" rel="stylesheet" type="text/css">
 
     <!--Beyond styles-->
-    <link id="beyond-link" href="assets/css/beyond.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/demo.min.css" rel="stylesheet" />
-    <link href="assets/css/typicons.min.css" rel="stylesheet" />
-    <link href="assets/css/animate.min.css" rel="stylesheet" />
+    <link id="beyond-link" href="/assets/css/beyond.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/demo.min.css" rel="stylesheet" />
+    <link href="/assets/css/typicons.min.css" rel="stylesheet" />
+    <link href="/assets/css/animate.min.css" rel="stylesheet" />
     <link id="skin-link" href="" rel="stylesheet" type="text/css" />
 
     <!--Skin Script: Place this script in head to load scripts for skins and rtl support-->
-    <script src="assets/js/skins.min.js"></script>
+    <script src="/assets/js/skins.min.js"></script>
 </head>
 <!-- /Head -->
 <!-- Body -->
@@ -74,7 +74,7 @@ Purchase: http://wrapbootstrap.com
                 <div class="navbar-header pull-left">
                     <a href="#" class="navbar-brand">
                         <small>
-                            <img src="assets/img/logo.png" alt="" />
+                            <img src="/assets/img/logo.png" alt="" />
                         </small>
                     </a>
                 </div>
@@ -180,7 +180,7 @@ Purchase: http://wrapbootstrap.com
                                 <ul class="pull-right dropdown-menu dropdown-arrow dropdown-messages">
                                     <li>
                                         <a href="#">
-                                            <img src="assets/img/avatars/divyia.jpg" class="message-avatar" alt="Divyia Austin">
+                                            <img src="/assets/img/avatars/divyia.jpg" class="message-avatar" alt="Divyia Austin">
                                             <div class="message">
                                                 <span class="message-sender">
                                                     Divyia Austin
@@ -199,7 +199,7 @@ Purchase: http://wrapbootstrap.com
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <img src="assets/img/avatars/bing.png" class="message-avatar" alt="Microsoft Bing">
+                                            <img src="/assets/img/avatars/bing.png" class="message-avatar" alt="Microsoft Bing">
                                             <div class="message">
                                                 <span class="message-sender">
                                                     Bing.com
@@ -218,7 +218,7 @@ Purchase: http://wrapbootstrap.com
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <img src="assets/img/avatars/adam-jansen.jpg" class="message-avatar" alt="Divyia Austin">
+                                            <img src="/assets/img/avatars/adam-jansen.jpg" class="message-avatar" alt="Divyia Austin">
                                             <div class="message">
                                                 <span class="message-sender">
                                                     Nicolas
@@ -310,7 +310,7 @@ Purchase: http://wrapbootstrap.com
                             <li>
                                 <a class="login-area dropdown-toggle" data-toggle="dropdown">
                                     <div class="avatar" title="View your public profile">
-                                        <img src="assets/img/avatars/adam-jansen.jpg">
+                                        <img src="/assets/img/avatars/adam-jansen.jpg">
                                     </div>
                                     <section>
                                         <h2><span class="profile"><span>David Stevenson</span></span></h2>
@@ -323,7 +323,7 @@ Purchase: http://wrapbootstrap.com
                                     <!--Avatar Area-->
                                     <li>
                                         <div class="avatar-area">
-                                            <img src="assets/img/avatars/adam-jansen.jpg" class="avatar">
+                                            <img src="/assets/img/avatars/adam-jansen.jpg" class="avatar">
                                             <span class="caption">Change Photo</span>
                                         </div>
                                     </li>
@@ -335,18 +335,18 @@ Purchase: http://wrapbootstrap.com
                                     <!--Theme Selector Area-->
                                     <li class="theme-area">
                                         <ul class="colorpicker" id="skin-changer">
-                                            <li><a class="colorpick-btn" href="#" style="background-color:#5DB2FF;" rel="assets/css/skins/blue.min.css"></a></li>
-                                            <li><a class="colorpick-btn" href="#" style="background-color:#2dc3e8;" rel="assets/css/skins/azure.min.css"></a></li>
-                                            <li><a class="colorpick-btn" href="#" style="background-color:#03B3B2;" rel="assets/css/skins/teal.min.css"></a></li>
-                                            <li><a class="colorpick-btn" href="#" style="background-color:#53a93f;" rel="assets/css/skins/green.min.css"></a></li>
-                                            <li><a class="colorpick-btn" href="#" style="background-color:#FF8F32;" rel="assets/css/skins/orange.min.css"></a></li>
-                                            <li><a class="colorpick-btn" href="#" style="background-color:#cc324b;" rel="assets/css/skins/pink.min.css"></a></li>
-                                            <li><a class="colorpick-btn" href="#" style="background-color:#AC193D;" rel="assets/css/skins/darkred.min.css"></a></li>
-                                            <li><a class="colorpick-btn" href="#" style="background-color:#8C0095;" rel="assets/css/skins/purple.min.css"></a></li>
-                                            <li><a class="colorpick-btn" href="#" style="background-color:#0072C6;" rel="assets/css/skins/darkblue.min.css"></a></li>
-                                            <li><a class="colorpick-btn" href="#" style="background-color:#585858;" rel="assets/css/skins/gray.min.css"></a></li>
-                                            <li><a class="colorpick-btn" href="#" style="background-color:#474544;" rel="assets/css/skins/black.min.css"></a></li>
-                                            <li><a class="colorpick-btn" href="#" style="background-color:#001940;" rel="assets/css/skins/deepblue.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#5DB2FF;" rel="/assets/css/skins/blue.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#2dc3e8;" rel="/assets/css/skins/azure.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#03B3B2;" rel="/assets/css/skins/teal.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#53a93f;" rel="/assets/css/skins/green.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#FF8F32;" rel="/assets/css/skins/orange.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#cc324b;" rel="/assets/css/skins/pink.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#AC193D;" rel="/assets/css/skins/darkred.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#8C0095;" rel="/assets/css/skins/purple.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#0072C6;" rel="/assets/css/skins/darkblue.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#585858;" rel="/assets/css/skins/gray.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#474544;" rel="/assets/css/skins/black.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#001940;" rel="/assets/css/skins/deepblue.min.css"></a></li>
                                         </ul>
                                     </li>
                                     <!--/Theme Selector Area-->
@@ -913,7 +913,7 @@ Purchase: http://wrapbootstrap.com
                                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                     <div class="databox radius-bordered databox-shadowed databox-graded">
                                         <div class="databox-left no-padding bordered-left-2 bordered-palegreen">
-                                            <img src="assets/img/avatars/John-Smith.jpg" style="width:65px; height:65px;">
+                                            <img src="/assets/img/avatars/John-Smith.jpg" style="width:65px; height:65px;">
                                         </div>
                                         <div class="databox-right padding-top-20">
                                             <div class="databox-stat palegreen">
@@ -1344,7 +1344,7 @@ Purchase: http://wrapbootstrap.com
                                                         <li class="ticket-item">
                                                             <div class="row">
                                                                 <div class="ticket-user col-lg-6 col-sm-12">
-                                                                    <img src="assets/img/avatars/adam-jansen.jpg" class="user-avatar">
+                                                                    <img src="/assets/img/avatars/adam-jansen.jpg" class="user-avatar">
                                                                     <span class="user-name">Adam Johnson</span>
                                                                     <span class="user-at">at</span>
                                                                     <span class="user-company">Microsoft</span>
@@ -1366,7 +1366,7 @@ Purchase: http://wrapbootstrap.com
                                                         <li class="ticket-item">
                                                             <div class="row">
                                                                 <div class="ticket-user col-lg-6 col-sm-12">
-                                                                    <img src="assets/img/avatars/divyia.jpg" class="user-avatar">
+                                                                    <img src="/assets/img/avatars/divyia.jpg" class="user-avatar">
                                                                     <span class="user-name">Divyia Phillips</span>
                                                                     <span class="user-at">at</span>
                                                                     <span class="user-company">Dribbble</span>
@@ -1388,7 +1388,7 @@ Purchase: http://wrapbootstrap.com
                                                         <li class="ticket-item">
                                                             <div class="row">
                                                                 <div class="ticket-user col-lg-6 col-sm-12">
-                                                                    <img src="assets/img/avatars/Matt-Cheuvront.jpg" class="user-avatar">
+                                                                    <img src="/assets/img/avatars/Matt-Cheuvront.jpg" class="user-avatar">
                                                                     <span class="user-name">Nicolai Larson</span>
                                                                     <span class="user-at">at</span>
                                                                     <span class="user-company">Google</span>
@@ -1410,7 +1410,7 @@ Purchase: http://wrapbootstrap.com
                                                         <li class="ticket-item">
                                                             <div class="row">
                                                                 <div class="ticket-user col-lg-6 col-sm-12">
-                                                                    <img src="assets/img/avatars/Sergey-Azovskiy.jpg" class="user-avatar">
+                                                                    <img src="/assets/img/avatars/Sergey-Azovskiy.jpg" class="user-avatar">
                                                                     <span class="user-name">Bill Jackson</span>
                                                                     <span class="user-at">at</span>
                                                                     <span class="user-company">Mabna</span>
@@ -1432,7 +1432,7 @@ Purchase: http://wrapbootstrap.com
                                                         <li class="ticket-item">
                                                             <div class="row">
                                                                 <div class="ticket-user col-lg-6 col-sm-12">
-                                                                    <img src="assets/img/avatars/John-Smith.jpg" class="user-avatar">
+                                                                    <img src="/assets/img/avatars/John-Smith.jpg" class="user-avatar">
                                                                     <span class="user-name">Eric Clapton</span>
                                                                     <span class="user-at">at</span>
                                                                     <span class="user-company">Musicker</span>
@@ -1709,28 +1709,28 @@ Purchase: http://wrapbootstrap.com
     </div>
 
     <!--Basic Scripts-->
-    <script src="assets/js/jquery-2.0.3.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/jquery-2.0.3.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
 
     <!--Beyond Scripts-->
-    <script src="assets/js/beyond.min.js"></script>
+    <script src="/assets/js/beyond.min.js"></script>
 
 
     <!--Page Related Scripts-->
     <!--Sparkline Charts Needed Scripts-->
-    <script src="assets/js/charts/sparkline/jquery.sparkline.js"></script>
-    <script src="assets/js/charts/sparkline/sparkline-init.js"></script>
+    <script src="/assets/js/charts/sparkline/jquery.sparkline.js"></script>
+    <script src="/assets/js/charts/sparkline/sparkline-init.js"></script>
 
     <!--Easy Pie Charts Needed Scripts-->
-    <script src="assets/js/charts/easypiechart/jquery.easypiechart.js"></script>
-    <script src="assets/js/charts/easypiechart/easypiechart-init.js"></script>
+    <script src="/assets/js/charts/easypiechart/jquery.easypiechart.js"></script>
+    <script src="/assets/js/charts/easypiechart/easypiechart-init.js"></script>
 
     <!--Flot Charts Needed Scripts-->
-    <script src="assets/js/charts/flot/jquery.flot.js"></script>
-    <script src="assets/js/charts/flot/jquery.flot.resize.js"></script>
-    <script src="assets/js/charts/flot/jquery.flot.pie.js"></script>
-    <script src="assets/js/charts/flot/jquery.flot.tooltip.js"></script>
-    <script src="assets/js/charts/flot/jquery.flot.orderBars.js"></script>
+    <script src="/assets/js/charts/flot/jquery.flot.js"></script>
+    <script src="/assets/js/charts/flot/jquery.flot.resize.js"></script>
+    <script src="/assets/js/charts/flot/jquery.flot.pie.js"></script>
+    <script src="/assets/js/charts/flot/jquery.flot.tooltip.js"></script>
+    <script src="/assets/js/charts/flot/jquery.flot.orderBars.js"></script>
 
     <script>
         // If you want to draw your charts with Theme colors you must run initiating charts after that current skin is loaded

@@ -13,6 +13,11 @@ public class User {
     private String loginName;
 
     /**
+     * 工号
+     */
+    private String jobNumber;
+
+    /**
      * 密码
      */
     private String password;
@@ -46,6 +51,14 @@ public class User {
 
     public void setLoginName(String loginName) {
         this.loginName = loginName;
+    }
+
+    public String getJobNumber() {
+        return jobNumber;
+    }
+
+    public void setJobNumber(String jobNumber) {
+        this.jobNumber = jobNumber;
     }
 
     public String getPassword() {

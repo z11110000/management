@@ -1,0 +1,12 @@
+--员工表
+CREATE TABLE `user` (
+  `ID` varchar(255) NOT NULL COMMENT 'id 主键',
+  `LOGIN_NAME` varchar(255) NOT NULL COMMENT '登录名',
+  `JOB_NUMBER` varchar(255) NOT NULL COMMENT '工号',
+  `PASSWORD` varchar(255) NOT NULL COMMENT '登录密码',
+  `USER_NAME` varchar(255) NOT NULL COMMENT '名称',
+  `DEPT_ID` varchar(255) NOT NULL COMMENT '部门id',
+  `STATUS` varchar(2) NOT NULL DEFAULT '1' COMMENT '账号状态（0 未使用  1 使用中  2 冻结  3 删除）',
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+

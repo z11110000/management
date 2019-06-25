@@ -30,6 +30,7 @@
         SELECT * FROM user
         WHERE LOGIN_NAME = #{loginName}
               AND PASSWORD = #{password}
+              AND STATUS = 1
     </select>
     
 
